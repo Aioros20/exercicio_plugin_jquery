@@ -1,6 +1,7 @@
 $(document).ready(function () {
     $('#carousel-imagens').slick({
         autoplay: true,
+        dots: true,
         arrows: false
     });
 
@@ -30,7 +31,9 @@ $(document).ready(function () {
                 email: true
             },
             telefone: {
-                required: true
+                required: true,
+                minlength: 14,
+                maxlength: 15
             },
             endereco: {
                 required: true
